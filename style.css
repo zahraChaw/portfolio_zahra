@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&amp;display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&amp;display=swap'); */
 
 * {
     font-family: cascadia code;
@@ -8,7 +8,6 @@
     text-decoration: none;
     outline: none;
     border: none;
-    /* text-transform: capitalize; */
     transition: all .2s linear;
 }
 *::selection {
@@ -253,7 +252,7 @@ header .navbar ul li a:hover {
   }
 
   .skillsContainer {
-    margin-left: 13%;
+    /* margin-left: 13%; */
     margin-top: 15rem;
     text-align: center;
     font-size: 1rem;
@@ -296,6 +295,12 @@ header .navbar ul li a:hover {
   }
 
 /* Portfolio Section Starts */
+.projet{
+    font-size: 2 rem;
+    text-align: center;
+    color:#155965;
+}
+
 
 .portfolio .box-container {
     display: flex;
@@ -305,8 +310,8 @@ header .navbar ul li a:hover {
     /* padding: 2rem 0; */
 }
 .portfolio .box-container .box {
-    height: 20rem;
-    width: 26rem;
+    height: 25rem;
+    width: 33rem;
     border-radius: 1rem;
     margin: 2rem;
     overflow: hidden;
@@ -315,8 +320,8 @@ header .navbar ul li a:hover {
 .portfolio .box-container .box img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
 }
+
 .portfolio .box-container .box:hover img {
     transform: scale(1.2);
 }
@@ -401,8 +406,8 @@ header .navbar ul li a:hover {
  }
  @media (max-width:991px) {
      header {
-         /* left: -120%; */
-         display: none;
+         left: -120%;
+         /* display: none; */
      }
      #menu {
         
@@ -420,6 +425,18 @@ header .navbar ul li a:hover {
      }
  }
  @media (max-width:768px) {
+    header {
+        left: -120%;
+        /* display: none; */
+    }
+    #menu {
+       
+        display: block;
+
+    }
+    header.toggle {
+        left: 0%;
+    }
      html {
          font-size: 50%;
      }
