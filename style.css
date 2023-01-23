@@ -403,6 +403,14 @@ header .navbar ul li a:hover {
      .home {
          padding: 1rem 4rem;
      }
+    
+     .skillsContainer {
+        margin-top: 10rem;
+        text-align: center;
+        font-size: 0.7rem;
+        width: 100%;
+        height: 100%;
+      }
  }
  @media (max-width:991px) {
      header {
@@ -426,6 +434,7 @@ header .navbar ul li a:hover {
  }
  @media (max-width:768px) {
     header {
+        
         left: -120%;
         /* display: none; */
     }
