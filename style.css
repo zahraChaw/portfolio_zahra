@@ -96,6 +96,7 @@ header .user img {
     box-shadow: 10px 0 #caeaef, 20px 0 #94c6cf;
 }
 
+
 header .navbar {
     width: 100%;
 }
@@ -165,7 +166,7 @@ header .navbar ul li a:hover {
   }
 
   .home .heroDescription .socialsResume .resumeLink {
-    margin-left: 10rem;
+    /* margin-left: 10rem; */
     /* margin-top: 10rem;
     align-content: center; */
     background-color:#155965;
@@ -411,6 +412,9 @@ header .navbar ul li a:hover {
         width: 100%;
         height: 100%;
       }
+      .home .heroDescription .socialsResume .resumeLink {
+        margin-left: 0;
+    }
  }
  @media (max-width:991px) {
      header {
@@ -431,12 +435,20 @@ header .navbar ul li a:hover {
      .home{
         padding: 2rem;
      }
+     .home .heroDescription .socialsResume .resumeLink {
+        margin-left: 0;
+    }
  }
  @media (max-width:768px) {
     header {
-        
-        left: -120%;
-        /* display: none; */
+        width: 100%;
+    }
+    #header.active{
+        left: 0;
+    }
+    .heading {
+        margin: 0 3rem;
+        font-size: 5rem;
     }
     #menu {
        
@@ -451,17 +463,32 @@ header .navbar ul li a:hover {
      }
      .home{
         padding: 2rem;
- }
-}
-@media (max-width:400px) {
-    header {
-        width: 100vw;
     }
+    .home .heroDescription .socialsResume .resumeLink {
+        margin-left: 0;
+    }
+ 
+
+}
+@media (max-width:480px) {
+    header {
+        width: 100%;
+    }
+
+    .about .infoP{
+        margin: 3rem 3rem 3rem 3rem;
+        width: 90%;
+    }
+    
     .home{
         padding: 2rem;
     }
     .heading {
-        margin: 0 3rem;
+        margin: 3rem 3rem;
+        font-size: 3rem;
+    }
+    .about .resumeLink{
+        margin-left: 25%;
     }
     .about .row .counter .box {
         width: 100%;
@@ -474,5 +501,15 @@ header .navbar ul li a:hover {
     }
     .contact .row form {
         margin: 3rem 0;
+    }
+
+    .skillsContainer{
+        width: 90%;
+    }
+    .home .heroDescription .socialsResume .resumeLink {
+        
+        letter-spacing: 0.6px;
+        font-size: 1.9rem;
+        /* height: 6.1rem; */
     }
 }

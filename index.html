@@ -22,22 +22,22 @@
   <!-- Début Section header -->
   <header id="header">
     <div class="user">
-      <img src="./img/moi4.png" alt="Photo de Zahra">
+      <img src="./img/moi1.png" alt="Photo de Zahra">
     </div>
     <!-- essai-->
 
     <nav class="navbar">
       <ul>
-        <li><a href="#home"><i class="fas fa-user"></i> Accueil</a></li>
-        <li><a href="#about">A propos</a></li>
-        <li><a href="#skills">Compétences</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home"onclick="show()"><i class="fas fa-user"></i> Accueil</a></li>
+        <li><a href="#about" onclick="show()">A propos</a></li>
+        <li><a href="#skills"onclick="show()">Compétences</a></li>
+        <li><a href="#portfolio"onclick="show()">Portfolio</a></li>
+        <li><a href="#contact"onclick="show()">Contact</a></li>
       </ul>
     </nav>
   </header>
-
-  <div id="menu" class="fa fa-bars"></div>
+      <button class="burger"onclick="show()"><div id="menu" class="fa fa-bars"></div></button>
+  
 
   <!-- Début Section home -->
 
@@ -125,15 +125,16 @@
             <p>Wordpress</p>
           </div>
         </li>
-      </ul>
-
-      <ul class="skillsGrid">
+      
         <li>
           <div class="itemContainer">
             <i class="fa-brands fa-php"></i>
             <p>Php</p>
           </div>
         </li>
+       </ul>
+
+        <ul class="skillsGrid">
         <li>
           <div class="itemContainer">
             <i class="fa-brands fa-react"></i>
@@ -159,9 +160,9 @@
             <p>Microsoft teams</p>
           </div>
         </li>
-      </ul>
+      
 
-      <ul class="skillsGrid">
+      
         <li>
           <div class="itemContainer">
             <img src="./img/ps.svg" width="60%">
@@ -175,6 +176,9 @@
             <p>Illustrator</p>
           </div>
         </li>
+        </ul>
+
+        <ul class="skillsGrid">
 
         <li>
           <div class="itemContainer">
@@ -196,9 +200,7 @@
             <p>Sass</p>
           </div>
         </li>
-      </ul>
-
-      <ul class="skillsGrid">
+      
         <li>
           <div class="itemContainer">
             <img src="./img/vs.png" width="55%">
@@ -297,7 +299,7 @@
   <!-- jquery cdn link  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-  <script src="script.js"></script>
+  <script src="./scripts/script.js"></script>
 
 </body>
 
